@@ -4,6 +4,31 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+/*logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 28px;
+    }
+
+    .logo span {
+        font-size: 20px;
+    }
+}
+
 
 /* Navbar */
 .navbar {
