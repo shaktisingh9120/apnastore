@@ -1,4 +1,8 @@
-function toggleMenu() {
-  const menu = document.getElementById("navMenu");
-  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.getElementById("navMenu");
+
+  menuToggle.addEventListener("click", function () {
+    navMenu.classList.toggle("show");
+  });
+});
